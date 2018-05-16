@@ -12,7 +12,7 @@ var router = require('./app/routes');
 mongoose.connect((databaseConfig.url));
 
 app.listen(process.env.PORT || 8080);
-console.log("App listening on port 8180");
+console.log("App listening on port 8080");
 
 app.use(bodyParser.urlencoded({ extended: false })); // Parses urlencoded bodies
 app.use(bodyParser.json()); // Send JSON responses
