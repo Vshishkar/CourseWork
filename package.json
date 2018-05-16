@@ -11,13 +11,13 @@
     "heroku"
   ],
   "engines": {
-    "node": "4.1.1"
+    "node": "8.10.0"
   },
   "author": "vshishkar",
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.15.2",
+    "body-parser": "^1.18.3",
     "cors": "^2.8.1",
     "express": "^4.14.0",
     "jsonwebtoken": "^7.1.9",
