@@ -7,7 +7,9 @@ var PostSchema = new mongoose.Schema({
     location:String,
     postPhotoUrl:String,
     description:String,
-    likes:Number,
+    likes:[{
+        type:String,
+    }]
 } ,{
     timestamps: true
 });
