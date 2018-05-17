@@ -47,7 +47,7 @@ module.exports = function(app){
     postRoutes.get('/:username', requireAuth, AuthenticationController.roleAuthorization(['user','admin']), PostController.getPostsByUsername);
     postRoutes.get('/', requireAuth, AuthenticationController.roleAuthorization(['user','admin']), PostController.getPosts);
     postRoutes.post('/', requireAuth, AuthenticationController.roleAuthorization(['user','admin']), PostController.createPost);
-    postRoutes.post('/likes/username', requireAuth, AuthenticationController.roleAuthorization(['user','admin']), PostController.leaveLike);
+    postRoutes.post('/likes/:username', requireAuth, AuthenticationController.roleAuthorization(['user','admin']), PostController.leaveLike);
     postRoutes.delete('/:post_id', requireAuth, AuthenticationController.roleAuthorization(['admin']), PostController.deletePost);
 
 
