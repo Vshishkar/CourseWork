@@ -8,6 +8,8 @@ var PostSchema = new mongoose.Schema({
     postPhotoUrl:String,
     description:String,
     likes:Number,
+} ,{
+    timestamps: true
 });
 
 module.exports = mongoose.model('Post', PostSchema);

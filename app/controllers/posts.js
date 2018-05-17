@@ -7,9 +7,7 @@ exports.getPosts = function(req, res, next){
         if (err){
             res.send(err);
         }
-
         res.json(todos);
-
     });
 
 };
