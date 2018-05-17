@@ -2,14 +2,13 @@ var Post = require('../models/Post');
 
 exports.getPosts = function(req, res, next){
 
-    Post.find(null,null, { sort :{ createdOn : -1}},function(err, todos) {
+    Post.find(null,null, { sort :{ createdOn : +1}},function(err, todos) {
 
         if (err){
             res.send(err);
         }
         res.json(todos);
     });
-
 };
 
 
